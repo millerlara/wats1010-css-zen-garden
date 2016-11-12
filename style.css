@@ -19,6 +19,10 @@ h1 {
 	font-size: 35px;
 	margin: 200px 100px 10px 550px;
 	position: relative;
+	-webkit-animation-name: bounce;			/*adding animation lines 22 to 25*/
+  	animation-name: bounce;
+  	-webkit-transform-origin: center bottom;
+  	transform-origin: center bottom;
 }
 
 h2 {
