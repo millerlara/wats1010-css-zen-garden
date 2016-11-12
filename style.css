@@ -77,14 +77,6 @@ abbr:hover::after {
 .summary {
 	margin: 10px 100px 10px 550px;
 	content: url(toadstool.png);
-        -webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
-        animation: mymove 5s infinite;
-}
-
-/* Chrome, Safari, Opera */
-@-webkit-keyframes mymove {
-    from {content: toadstool.png;}
-    to {content: rock-path-left.png;
 }
 
 .summary::after {
