@@ -23,9 +23,18 @@ html {
 h1 {
 	font-family: "Rock Salt", sans-serif;
 	font-size: 35px;
+	/*new code*/
+	-webkit-animation: mythirdmove 5s infinite; /* Chrome, Safari, Opera */
+	/*new code*/
 	margin: 200px 100px 10px 550px;
 	position: relative;
 }
+/*new code*/
+@-webkit-keyframes mythirdmove {
+    from {font-size: 35px;}
+    to {font-size: 100px;}
+}
+/*new code*/
 
 h2 {
 	font-family: "Rock Salt", sans-serif;
