@@ -1,194 +1,336 @@
 /* css Zen Garden default style v1.02 */
 /* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
 
-/* This file based on 'Tranquille' by Dave Shea */
-/* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
-/* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
-
 /* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
 
 
 /* basic elements */
+
+@import url('https://fonts.googleapis.com/css?family=Rock+Salt');
+
 html {
-	margin: 0;
-	padding: 0;
-	}
-body { 
-	font: 75% georgia, sans-serif;
-	line-height: 1.88889;
-	color: #555753; 
-	background: #fff url(blossoms.jpg) no-repeat bottom right; 
-	margin: 0; 
-	padding: 0;
-	}
-p { 
-	margin-top: 0; 
-	text-align: justify;
-	}
-h3 { 
-	font: italic normal 1.4em georgia, sans-serif;
-	letter-spacing: 1px; 
-	margin-bottom: 0; 
-	color: #7D775C;
-	}
-a:link { 
-	font-weight: bold; 
-	text-decoration: none; 
-	color: #B7A5DF;
-	}
-a:visited { 
-	font-weight: bold; 
-	text-decoration: none; 
-	color: #D4CDDC;
-	}
-a:hover, a:focus, a:active { 
-	text-decoration: underline; 
-	color: #9685BA;
-	}
-abbr {
-	border-bottom: none;
-	}
-
-
-/* specific divs */
-.page-wrapper { 
-	background: url(zen-bg.jpg) no-repeat top left; 
-	padding: 0 175px 0 110px;  
-	margin: 0; 
-	position: relative;
-	}
-
-.intro { 
-	min-width: 470px;
-	width: 100%;
-	}
-
-header h1 { 
-	background: transparent url(h1.gif) no-repeat top left;
-	margin-top: 10px;
-	display: block;
-	width: 219px;
-	height: 87px;
-	float: left;
-
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	}
-header h2 { 
-	background: transparent url(h2.gif) no-repeat top left; 
-	margin-top: 58px; 
-	margin-bottom: 40px; 
-	width: 200px; 
-	height: 18px; 
-	float: right;
-
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	}
-header {
-	padding-top: 20px;
-	height: 87px;
+	font-family: "Trebuchet MS", sans-serif;
+	background: url('gnome.png') no-repeat top left;
+	background-size: 50%;
 }
 
+h1 {
+	font-family: "Rock Salt", sans-serif;
+	font-size: 35px;
+	margin: 200px 100px 10px 550px;
+	position: relative;
+}
+
+h2 {
+	font-family: "Rock Salt", sans-serif;
+	margin: 20px 0 0 550px;
+}
+
+h3 {
+	font-family: "Rock Salt", sans-serif;
+}
+
+ul {
+	padding: 0 0 0 10px;
+	margin: 0;
+}
+
+li a {
+	color: black;
+	line-height: 140%;
+}
+
+footer {
+	margin: 10px 400px 10px 100px;
+	letter-spacing: 1px;
+}
+
+a:link {
+  color: #4d4d4d;
+	text-decoration: none;
+}
+
+a:visited {
+  color: #264d00;
+}
+
+a:hover {
+    color: #ff3300;
+}
+
+abbr {
+	border-bottom: 1px dotted #ff3300;
+	position: relative;
+}
+
+abbr:hover::after {
+    position: static;
+    display: inline;
+    padding: 5px;
+    background-color: transparent;
+		font-size: small;
+    content: attr(title);
+}
+
+/* summary */
+
 .summary {
-	clear: both; 
-	margin: 20px 20px 20px 10px; 
-	width: 160px; 
+	margin: 10px 100px 10px 550px;
+}
+
+.summary::after {
+	content: url('rock-path-left.png');
+	background-color: transparent;
 	float: left;
-	}
-.summary p {
-	font: italic 1.1em/2.2 georgia; 
-	text-align: center;
-	}
+	padding-top: 200px;
+}
+
+/* preamble */
 
 .preamble {
-	clear: right; 
-	padding: 0px 10px 0 10px;
-	}
-.supporting {	
-	padding-left: 10px; 
-	margin-bottom: 40px;
-	}
+	margin: 610px 100px 400px 100px;
+	padding: 20px;
+	background-color: #d9d9d9;
+	border-radius: 10px;
+}
 
-footer { 
-	text-align: center; 
-	}
-footer a:link, footer a:visited { 
-	margin-right: 20px; 
-	}
+.preamble::after {
+	content: url('rock-path-right.png');
+	background-color: transparent;
+	float: left;
+	padding-top: 30px;
+}
 
-.sidebar {
-	margin-left: 600px; 
-	position: absolute; 
-	top: 0; 
-	right: 0;
-	}
-.sidebar .wrapper { 
-	font: 10px verdana, sans-serif; 
-	background: transparent url(paper-bg.jpg) top left repeat-y; 
-	padding: 10px; 
-	margin-top: 150px; 
-	width: 130px; 
-	}
-.sidebar h3.select { 
-	background: transparent url(h3.gif) no-repeat top left; 
-	margin: 10px 0 5px 0; 
-	width: 97px; 
-	height: 16px; 
+/* explanation */
 
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	}
-.sidebar h3.archives { 
-	background: transparent url(h5.gif) no-repeat top left; 
-	margin: 25px 0 5px 0; 
-	width:57px; 
-	height: 14px; 
+.explanation {
+	margin: 10px 100px 10px 100px;
+	padding:  15px;
+	border-radius: 10px;
+	background: #d9d9d9;
+}
 
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	}
-.sidebar h3.resources { 
-	background: transparent url(h6.gif) no-repeat top left; 
-	margin: 25px 0 5px 0; 
-	width:63px; 
-	height: 10px; 
+.explanation::after {
+	content: url('rock-path-left.png');
+	background-color: transparent;
+	float: right;
+	padding-top: 30px;
+}
 
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	}
+/* participation */
 
+.participation {
+	margin: 10px 500px 10px 100px;
+	padding: 15px;
+	border-radius: 10px;
+	background-color: #d9d9d9;
+}
 
-.sidebar ul {
-	margin: 0;
-	padding: 0;
-	}
-.sidebar li {
-	line-height: 1.3em; 
-	background: transparent url(cr1.gif) no-repeat top center; 
-	display: block; 
-	padding-top: 5px; 
-	margin-bottom: 5px;
+.participation::after {
+	content: url('rock-path-right.png');
+	background-color: transparent;
+	float: right;
+	padding: 30px 200px 0 0;
+}
+
+/* benefits */
+
+.benefits {
+	margin: 400px 100px 10px 700px;
+	padding: 15px;
+	border-radius: 10px;
+	background-color: #d9d9d9;
+}
+
+/* requirements */
+
+.requirements {
+	margin: 10px 100px 10px 100px;
+	padding: 15px;
+	border-radius: 10px;
+	background-color: #d9d9d9;
+}
+
+.requirements::after {
+	content: url('rock-path-left.png');
+	float: right;
+	padding: 20px 0 200px 50px;
+}
+
+.sidebar ul li {
 	list-style-type: none;
-	}
-.sidebar li a:link {
-	color: #988F5E;
-	}
-.sidebar li a:visited {
-	color: #B3AE94;
-	}
+	padding: 5px;
+}
 
+/* designs */
+.design-selection {
+  font-family: inherit;
+  text-align: center;
+  letter-spacing: 0.5px;
+	margin: 100px 500px 0 450px;
+	background-color: #d9d9d9;
+	border-radius: 10px;
+}
+.design-selection * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
 
-.extra1 {
-	background: transparent url(cr2.gif) top left no-repeat; 
-	position: absolute; 
-	top: 40px; 
-	right: 0; 
-	width: 148px; 
-	height: 110px;
-	}
+h3.select {
+	margin-left: 55px;
+}
+
+.design-selection li {
+  display: block;
+  list-style: outside none none;
+}
+
+.design-selection ul {
+	margin: 0 50px 0 50px;
+}
+
+.design-selection a {
+  padding: 0.4em 0;
+  color: black;
+  position: relative;
+  text-decoration: none;
+  display: inline;
+}
+
+.design-selection a:before {
+  position: absolute;
+  content: '';
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  opacity: 0;
+  top: 25%;
+  bottom: 25%;
+  left: 0;
+  right: 0;
+  border-top: 3px solid #34495e;
+  border-bottom: 3px solid #34495e;
+}
+.design-selection a:hover,
+.design-selection .current a {
+  color: red;
+}
+
+.design-selection a:hover:before,
+.design-selection .current a:before {
+  opacity: 1;
+  top: 0;
+  bottom: 0;
+}
+
+/* archives */
+.design-archives {
+  font-family: inherit;
+  text-align: right;
+  letter-spacing: 0.5px;
+	margin: 0 50px 0 220px;
+	width: 300px;
+	float: left;
+	clear: both;
+}
+
+.design-archives * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+.design-archives li {
+  list-style: outside none none;
+}
+
+.design-archives a {
+  padding: 0.4em 0;
+  color: black;
+  position: relative;
+  text-decoration: none;
+	padding: 5px;
+}
+
+.design-archives a:before {
+  position: absolute;
+  content: '';
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  opacity: 0;
+  top: 25%;
+  bottom: 25%;
+  left: 0;
+  right: 0;
+  border-top: 3px solid #34495e;
+  border-bottom: 3px solid #34495e;
+}
+.design-archives a:hover,
+.design-archives .current a {
+  color: red;
+}
+.design-archives a:hover:before,
+.design-archives .current a:before {
+  opacity: 1;
+  top: 0;
+  bottom: 0;
+}
+
+/* resources */
+
+.zen-resources {
+  font-family: inherit;
+  text-align: left;
+  letter-spacing: 0.5px;
+	background: url('toadstool.png') no-repeat left center;
+	width: 300px;
+	clear: right;
+	overflow: hidden;
+	padding-left: 250px;
+}
+
+.zen-resources * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+
+.zen-resources li {
+  list-style: outside none none;
+}
+
+.zen-resources a {
+  padding: 0.4em 0;
+  color: black;
+  position: relative;
+  text-decoration: none;
+  display: inline;
+}
+
+.zen-resources a:before {
+  position: absolute;
+  content: '';
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  opacity: 0;
+  top: 25%;
+  bottom: 25%;
+  left: 0;
+  right: 0;
+  border-top: 3px solid #34495e;
+  border-bottom: 3px solid #34495e;
+}
+.zen-resources a:hover,
+.zen-resources .current a {
+  color: red;
+}
+.zen-resources a:hover:before,
+.zen-resources .current a:before {
+  opacity: 1;
+  top: 0;
+  bottom: 0;
+}
+
