@@ -1,9 +1,6 @@
 /* css Zen Garden default style v1.02 */
 /* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
 
-/* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
-
-
 /* basic elements */
 
 @import url('https://fonts.googleapis.com/css?family=Rock+Salt');
@@ -76,7 +73,6 @@ abbr:hover::after {
 
 .summary {
 	margin: 10px 100px 10px 550px;
-	content: url(toadstool.png);
 }
 
 .summary::after {
@@ -172,6 +168,7 @@ abbr:hover::after {
 	background-color: #d9d9d9;
 	border-radius: 10px;
 }
+
 .design-selection * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -213,6 +210,7 @@ h3.select {
   border-top: 3px solid #34495e;
   border-bottom: 3px solid #34495e;
 }
+
 .design-selection a:hover,
 .design-selection .current a {
   color: red;
@@ -268,10 +266,12 @@ h3.select {
   border-top: 3px solid #34495e;
   border-bottom: 3px solid #34495e;
 }
+
 .design-archives a:hover,
 .design-archives .current a {
   color: red;
 }
+
 .design-archives a:hover:before,
 .design-archives .current a:before {
   opacity: 1;
@@ -324,14 +324,15 @@ h3.select {
   border-top: 3px solid #34495e;
   border-bottom: 3px solid #34495e;
 }
+
 .zen-resources a:hover,
 .zen-resources .current a {
   color: red;
 }
+
 .zen-resources a:hover:before,
 .zen-resources .current a:before {
   opacity: 1;
   top: 0;
   bottom: 0;
 }
-
