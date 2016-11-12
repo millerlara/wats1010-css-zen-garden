@@ -88,8 +88,16 @@ abbr:hover::after {
 	margin: 610px 100px 400px 100px;
 	padding: 20px;
 	background-color: #d9d9d9;
+	-webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
+    	animation: mymove 5s infinite;
 	border-radius: 10px;
 }
+/*new code*/
+@-webkit-keyframes mymove {
+    from {background-color: #d9d9d9;}
+    to {background-color: #e01f1f;}
+}
+/*new code*/
 
 .preamble::after {
 	content: url('rock-path-right.png');
