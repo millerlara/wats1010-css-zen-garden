@@ -8,8 +8,16 @@
 html {
 	font-family: "Trebuchet MS", sans-serif;
 	background: url('gnome.png') no-repeat top left;
+	-webkit-animation: myothermove 5s infinite; /* Chrome, Safari, Opera */
+    	animation: myothermove 5s infinite;
 	background-size: 50%;
 }
+/*new code*/
+@-webkit-keyframes myothermove {
+    from {background: url('gnome.png') no-repeat top left;}
+    to {background: url('gnome2.png') no-repeat top left;}
+}
+/*new code*/
 
 h1 {
 	font-family: "Rock Salt", sans-serif;
@@ -88,8 +96,10 @@ abbr:hover::after {
 	margin: 610px 100px 400px 100px;
 	padding: 20px;
 	background-color: #d9d9d9;
+	/*new code*/
 	-webkit-animation: mymove 5s infinite; /* Chrome, Safari, Opera */
     	animation: mymove 5s infinite;
+	/*new code*/
 	border-radius: 10px;
 }
 /*new code*/
