@@ -19,9 +19,6 @@ h1 {
 	font-size: 35px;
 	margin: 200px 100px 10px 550px;
 	position: relative;
-	/*adding animation lines 22 to 24*/
-  	-webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
-   	animation: mymove 5s infinite;
 }
 
 h2 {
@@ -79,6 +76,7 @@ abbr:hover::after {
 
 .summary {
 	margin: 10px 100px 10px 550px;
+	content: url(toadstool.png);
 }
 
 .summary::after {
